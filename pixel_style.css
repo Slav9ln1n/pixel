@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100vh;
+    font-family: "Coming Soon", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: black;
+}
+
+.font {
+    color: white
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+}
+
+main {
+    width: 100vw;
+    min-height: calc(100vh - 4em);
+    background: rgba(20, 16, 64, .22);
+    display: flex; /* Чтобы разделить на две большие колонки - с картинкой и с текстом */
+    align-items: center;
+}
+
+.flex-right {
+    width: 40%;
+}
+
+.flex-right img {
+    width: 100%;
+}
+
+.flex-left {
+    width: 60%;
+    margin-left: 4em;
+}
+
+.flex-left-inner {
+    width: 60%;
+}
+
+.flex-left-inner h1 {
+    font-size: 48px;
+}
+
+.selected {
+    text-decoration: underline;
+}
+
+.btn-main {
+    background: #FA8A0A;
+    color: white;
+    font-weight: bold;
+    width: fit-content;
+    height: 4em;
+    padding: 0 2em;
+    display: flex; /* Чтобы правильно указать border-radius, нужно заранее знать точную высоту кнопки. Поэтому высота указана точно в 4em, а display-flex используется чтобы без вертикальных отступов выровнять текст по центру кнопки по вертикали */
+    align-items: center;
+    border-radius: 2em;
+    user-select: none;
+    cursor: pointer;
+}

@@ -1,0 +1,76 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /*justify-content: center;
+    align-items: center;*/
+    background-color: #f0f0f0;
+}
+
+#grid-container {
+    display: grid;
+    gap: 3px;
+}
+
+.square {
+    background-color: gray;
+    border: 1px solid black;
+}
+
+.all {
+    display: flex;
+    flex-direction: row;
+    gap: 40px
+}
+
+.tools {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.color-square {
+    border: 1px solid black;
+    height: 30px;
+    width: 30px;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.delete {
+    background-color: grey;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/7358/7358795.png');
+    background-size: cover;
+}
+
+.fill {
+    background-color: grey;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/481/481869.png');
+    background-size: cover;
+}
+
+.save {
+    background-color: grey;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/8762/8762032.png');
+    background-size: cover;
+}
